@@ -31,7 +31,8 @@ jobs:
 
           echo "Contents before overwrite:"
           cat "$GITHUB_OUTPUT"
-
+      - name: something
+        run: |  
           echo "mistake=true" > "$GITHUB_OUTPUT"
 
           echo "Contents after overwrite:"
